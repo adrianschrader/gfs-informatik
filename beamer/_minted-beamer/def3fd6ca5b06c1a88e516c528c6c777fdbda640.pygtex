@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYGtrac{k+kd}{public} \PYGtrac{k+kd}{static} \PYGtrac{k+kd}{final} \PYGtrac{k+kt}{void} \PYGtrac{n+nf}{main}\PYGtrac{o}{(}\PYGtrac{n}{String}\PYGtrac{o}{[]} \PYGtrac{n}{vars}\PYGtrac{o}{)} \PYGtrac{o}{\PYGtracZob{}}
+      \PYGtrac{k}{return} \PYGtrac{l+m+mi}{0}\PYGtrac{o}{;}
+    \PYGtrac{o}{\PYGtracZcb{}}
+\end{Verbatim}

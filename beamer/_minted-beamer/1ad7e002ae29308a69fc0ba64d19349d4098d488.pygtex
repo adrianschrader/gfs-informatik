@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGfriendly{k+kd}{public} \PYGfriendly{k+kd}{class} \PYGfriendly{n+nc}{GameMaster} \PYGfriendly{o}{\PYGfriendlyZob{}}
+  \PYGfriendly{k+kd}{public} \PYGfriendly{n+nf}{GameMaster}\PYGfriendly{o}{(}\PYGfriendly{n}{Dice} \PYGfriendly{n}{dice}\PYGfriendly{o}{,} \PYGfriendly{n}{Class}\PYGfriendly{o}{\PYGfriendlyZlt{}?\PYGfriendlyZgt{}[]} \PYGfriendly{n}{types}\PYGfriendly{o}{)} \PYGfriendly{o}{\PYGfriendlyZob{}} \PYGfriendly{o}{\PYGfriendlyZcb{}}
+  \PYGfriendly{k+kd}{public} \PYGfriendly{n}{Result} \PYGfriendly{n+nf}{playRound}\PYGfriendly{o}{(}\PYGfriendly{k+kt}{int} \PYGfriendly{n}{goalScore}\PYGfriendly{o}{)} \PYGfriendly{o}{\PYGfriendlyZob{}} \PYGfriendly{o}{\PYGfriendlyZcb{}}
+\PYGfriendly{o}{\PYGfriendlyZcb{}}
+
+\PYGfriendly{k+kd}{public} \PYGfriendly{k+kd}{class} \PYGfriendly{n+nc}{GameMasterTest} \PYGfriendly{o}{\PYGfriendlyZob{}}
+  \PYGfriendly{k+kd}{public} \PYGfriendly{k+kt}{void} \PYGfriendly{n+nf}{playRoundTakesTurns}\PYGfriendly{o}{()} \PYGfriendly{k+kd}{throws} \PYGfriendly{n}{Exception} \PYGfriendly{o}{\PYGfriendlyZob{}} \PYGfriendly{o}{\PYGfriendlyZcb{}}
+  \PYGfriendly{k+kd}{public} \PYGfriendly{k+kt}{void} \PYGfriendly{n+nf}{playRoundSortsPlayersByScore}\PYGfriendly{o}{()} \PYGfriendly{k+kd}{throws} \PYGfriendly{n}{Exception} \PYGfriendly{o}{\PYGfriendlyZob{}} \PYGfriendly{o}{\PYGfriendlyZcb{}}
+  \PYGfriendly{k+kd}{public} \PYGfriendly{k+kt}{void} \PYGfriendly{n+nf}{playRoundGivesResult}\PYGfriendly{o}{()} \PYGfriendly{k+kd}{throws} \PYGfriendly{n}{Exception} \PYGfriendly{o}{\PYGfriendlyZob{}} \PYGfriendly{o}{\PYGfriendlyZcb{}}
+\PYGfriendly{o}{\PYGfriendlyZcb{}}
+\end{Verbatim}

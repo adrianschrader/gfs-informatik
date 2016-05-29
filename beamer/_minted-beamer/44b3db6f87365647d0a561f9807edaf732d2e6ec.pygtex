@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGtrac{n+nd}{@Test}
+\PYGtrac{k+kd}{public} \PYGtrac{k+kt}{void} \PYGtrac{n+nf}{playRoundSortsPlayersByScore}\PYGtrac{o}{()} \PYGtrac{k+kd}{throws} \PYGtrac{n}{Exception} \PYGtrac{o}{\PYGtracZob{}}
+    \PYGtrac{n}{GameMaster} \PYGtrac{n}{master} \PYGtrac{o}{=} \PYGtrac{n}{generateGameMaster}\PYGtrac{o}{();}
+    \PYGtrac{n}{PlayerScoreComparator} \PYGtrac{n}{comparator} \PYGtrac{o}{=} \PYGtrac{k}{new} \PYGtrac{n}{PlayerScoreComparator}\PYGtrac{o}{(}\PYGtrac{l+m+mi}{21}\PYGtrac{o}{);}
+    \PYGtrac{n}{master}\PYGtrac{o}{.}\PYGtrac{n+na}{playRound}\PYGtrac{o}{(}\PYGtrac{l+m+mi}{21}\PYGtrac{o}{);}
+
+    \PYGtrac{n}{assertThat}\PYGtrac{o}{(}\PYGtrac{n}{master}\PYGtrac{o}{.}\PYGtrac{n+na}{getPlayers}\PYGtrac{o}{()).}\PYGtrac{n+na}{isSortedAccordingTo}\PYGtrac{o}{(}\PYGtrac{n}{comparator}\PYGtrac{o}{);}
+\PYGtrac{o}{\PYGtracZcb{}}
+\end{Verbatim}

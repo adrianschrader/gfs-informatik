@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGtrac{n+nd}{@org.junit.Test}
+\PYGtrac{k+kd}{public} \PYGtrac{k+kt}{void} \PYGtrac{n+nf}{testPlayRound}\PYGtrac{o}{()} \PYGtrac{k+kd}{throws} \PYGtrac{n}{Exception} \PYGtrac{o}{\PYGtracZob{}}
+    \PYGtrac{n}{GameMaster} \PYGtrac{n}{master} \PYGtrac{o}{=} \PYGtrac{k}{this}\PYGtrac{o}{.}\PYGtrac{n+na}{generateGameMaster}\PYGtrac{o}{();}
+
+    \PYGtrac{n}{Result} \PYGtrac{n}{result} \PYGtrac{o}{=} \PYGtrac{n}{master}\PYGtrac{o}{.}\PYGtrac{n+na}{playRound}\PYGtrac{o}{(}\PYGtrac{l+m+mi}{21}\PYGtrac{o}{);}
+
+    \PYGtrac{c+c1}{// Assertion}
+\PYGtrac{o}{\PYGtracZcb{}}
+\end{Verbatim}

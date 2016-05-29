@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGfriendly{n+nd}{@org.junit.Test}
+\PYGfriendly{k+kd}{public} \PYGfriendly{k+kt}{void} \PYGfriendly{n+nf}{testPlayRound}\PYGfriendly{o}{()} \PYGfriendly{k+kd}{throws} \PYGfriendly{n}{Exception} \PYGfriendly{o}{\PYGfriendlyZob{}}
+    \PYGfriendly{n}{GameMaster} \PYGfriendly{n}{master} \PYGfriendly{o}{=} \PYGfriendly{k}{this}\PYGfriendly{o}{.}\PYGfriendly{n+na}{generateGameMaster}\PYGfriendly{o}{();}
+    \PYGfriendly{n}{Result} \PYGfriendly{n}{result} \PYGfriendly{o}{=} \PYGfriendly{n}{master}\PYGfriendly{o}{.}\PYGfriendly{n+na}{playRound}\PYGfriendly{o}{(}\PYGfriendly{l+m+mi}{21}\PYGfriendly{o}{);}
+    \PYGfriendly{c+c1}{// Assertion}
+\PYGfriendly{o}{\PYGfriendlyZcb{}}
+\end{Verbatim}

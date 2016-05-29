@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGtrac{n+nd}{@org.junit.Test}
+\PYGtrac{k+kd}{public} \PYGtrac{k+kt}{void} \PYGtrac{n+nf}{testPlayRound}\PYGtrac{o}{()} \PYGtrac{k+kd}{throws} \PYGtrac{n}{Exception} \PYGtrac{o}{\PYGtracZob{}}
+    \PYGtrac{n}{GameMaster} \PYGtrac{n}{master} \PYGtrac{o}{=} \PYGtrac{k}{new} \PYGtrac{n}{GameMaster}\PYGtrac{o}{(}\PYGtrac{k}{new} \PYGtrac{n}{Dice}\PYGtrac{o}{(}\PYGtrac{l+m+mi}{6}\PYGtrac{o}{),} \PYGtrac{k}{new} \PYGtrac{n}{Class}\PYGtrac{o}{\PYGtracZlt{}?\PYGtracZgt{}[]} \PYGtrac{o}{\PYGtracZob{}} \PYGtrac{n}{BalancedPlayer}\PYGtrac{o}{.}\PYGtrac{n+na}{class} \PYGtrac{o}{\PYGtracZcb{});}
+
+    \PYGtrac{k}{for} \PYGtrac{o}{(}\PYGtrac{k+kt}{int} \PYGtrac{n}{i} \PYGtrac{o}{=} \PYGtrac{l+m+mi}{0}\PYGtrac{o}{;} \PYGtrac{n}{i} \PYGtrac{o}{\PYGtracZlt{}} \PYGtrac{l+m+mi}{20}\PYGtrac{o}{;} \PYGtrac{n}{i}\PYGtrac{o}{++)} \PYGtrac{o}{\PYGtracZob{}}
+        \PYGtrac{n}{Result} \PYGtrac{n}{result} \PYGtrac{o}{=} \PYGtrac{n}{master}\PYGtrac{o}{.}\PYGtrac{n+na}{playRound}\PYGtrac{o}{(}\PYGtrac{l+m+mi}{21}\PYGtrac{o}{);}
+
+        \PYGtrac{k}{if} \PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{isTie}\PYGtrac{o}{())} \PYGtrac{o}{\PYGtracZob{}}
+            \PYGtrac{n}{assertThat}\PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getWinners}\PYGtrac{o}{()).}\PYGtrac{n+na}{hasSize}\PYGtrac{o}{(}\PYGtrac{l+m+mi}{2}\PYGtrac{o}{);}
+        \PYGtrac{o}{\PYGtracZcb{}} \PYGtrac{k}{else} \PYGtrac{o}{\PYGtracZob{}}
+            \PYGtrac{n}{assertThat}\PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getWinners}\PYGtrac{o}{()).}\PYGtrac{n+na}{hasSize}\PYGtrac{o}{(}\PYGtrac{l+m+mi}{1}\PYGtrac{o}{);}
+        \PYGtrac{o}{\PYGtracZcb{}}
+    \PYGtrac{o}{\PYGtracZcb{}}
+\PYGtrac{o}{\PYGtracZcb{}}
+\end{Verbatim}

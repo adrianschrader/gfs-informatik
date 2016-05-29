@@ -1,0 +1,83 @@
+%%
+% Unit Tests
+% Datum: 29.10.2016
+% Autor: Adrian Schrader
+%%
+\section{Unit Tests}
+
+\begin{frame}
+  \frametitle{Definition}
+  \begin{block}{Modul (Unit)}
+    \begin{itemize}
+      \item Funktionale, isolierbare Einheit
+      \item Meist einzelne Klassen
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Modultest (Unit Test)}
+    \begin{itemize}
+      \item sichert genau \emph{eine} sichtbare Eigenschaft
+      \item bezieht sich auf \emph{eine} isolierte Komponente
+      \item vollständig automatisierter Code (Testing Framework)
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Merkmale}
+
+  \begin{block}{Unit Tests sind\ldots}
+    \begin{itemize}
+      \item leicht verständlich
+      \item voneinander unabhängig
+      \item hochwertig und gewartet
+      \item \glqq{}gemein\grqq{}
+      \item schnell
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Einsatz}
+
+  \begin{columns}[T,onlytextwidth]
+    \column{0.47\textwidth}
+    \begin{exampleblock}{Vorteile}
+      \begin{itemize}
+        \item Zuverlässiger Code
+        \item Überprüfbare Spezifikation
+        \item Rückversicherung des Entwicklers
+        \item Team-Management
+      \end{itemize}
+    \end{exampleblock}
+
+    \column{0.47\textwidth}
+    \begin{alertblock}{Nachteile}
+      \begin{itemize}
+        \item garantiert kein Zusammenspiel von Komponenten
+        \item garantiert keine Performance
+        \item \glqq doppelter\grqq\ Code
+      \end{itemize}
+    \end{alertblock}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Implementierung}
+
+  \begin{minted}{java}
+import org.junit.Test;
+import org.junit.Assert.*;
+
+public class MatchBoxTest {
+  public MatchBoxTest() {}
+
+  @Test
+  public void drawNotMoreThanThree() {
+    MatchBox matchbox1 = new MatchBox(25);
+    matchbox1.draw(4);
+    assertEquals(22, matchbox1.count());
+  }
+}
+  \end{minted}
+\end{frame}

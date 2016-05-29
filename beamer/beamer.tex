@@ -1,0 +1,70 @@
+%%
+% Beamer Präsentation - LaTex (mtheme)
+% Datum: 28.10.2016
+% Autor: Adrian Schrader
+%%
+\documentclass[10pt]{beamer}
+\usepackage[ngerman]{babel}
+
+\usetheme[
+  background=light, % light/dark
+  numbering=counter, % counter/fraction/none
+  progressbar=frametitle, % frametitle/head/foot/none
+  block=fill % fill/none
+]{metropolis}
+
+\usepackage[backend=biber,style=alphabetic]{biblatex}
+\usepackage[babel,german=guillemets]{csquotes}
+\bibliography{bib/bibliography}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{braket}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\usepackage{caption}
+\usepackage[section]{minted}
+\usemintedstyle{friendly}
+\definecolor{mintedbg}{RGB}{250, 250, 250}
+\setminted[java]{autogobble, linenos, bgcolor=mintedbg}
+\renewcommand{\listingscaption}{Quellcode}
+
+\title{Einstieg in Testkonzepte für Java}
+\subtitle{}
+\date{\today}
+\author{Adrian Schrader}
+\institute{Informatik 2h, Herr Endstrasser}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{img/HeaderIcon}}
+
+\begin{document}
+\maketitle
+
+\begin{frame}
+  \frametitle{Inhaltsübersicht}
+  %\setbeamerfont{section in toc}{size=\large}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents
+\end{frame}
+
+\include{tex/unit}
+\include{tex/tdd}
+\include{tex/examples}
+
+\begin{frame}[allowframebreaks]
+
+  \nocite{*}
+  \printbibliography{}
+
+\end{frame}
+
+\include{tex/questions}
+
+\end{document}

@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGtrac{n+nd}{@Test}
+\PYGtrac{k+kd}{public} \PYGtrac{k+kt}{void} \PYGtrac{n+nf}{testPlayRound}\PYGtrac{o}{()} \PYGtrac{k+kd}{throws} \PYGtrac{n}{Exception} \PYGtrac{o}{\PYGtracZob{}}
+    \PYGtrac{n}{GameMaster} \PYGtrac{n}{master} \PYGtrac{o}{=} \PYGtrac{k}{this}\PYGtrac{o}{.}\PYGtrac{n+na}{generateGameMaster}\PYGtrac{o}{();}
+
+    \PYGtrac{k}{for} \PYGtrac{o}{(}\PYGtrac{k+kt}{int} \PYGtrac{n}{i} \PYGtrac{o}{=} \PYGtrac{l+m+mi}{0}\PYGtrac{o}{;} \PYGtrac{n}{i} \PYGtrac{o}{\PYGtracZlt{}} \PYGtrac{l+m+mi}{100}\PYGtrac{o}{;} \PYGtrac{n}{i}\PYGtrac{o}{++)} \PYGtrac{o}{\PYGtracZob{}}
+        \PYGtrac{n}{Result} \PYGtrac{n}{result} \PYGtrac{o}{=} \PYGtrac{n}{master}\PYGtrac{o}{.}\PYGtrac{n+na}{playRound}\PYGtrac{o}{(}\PYGtrac{l+m+mi}{21}\PYGtrac{o}{);}
+
+        \PYGtrac{k}{if} \PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{isTie}\PYGtrac{o}{())} \PYGtrac{o}{\PYGtracZob{}}
+            \PYGtrac{k}{if} \PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getWinner}\PYGtrac{o}{().}\PYGtrac{n+na}{getScore}\PYGtrac{o}{()} \PYGtrac{o}{\PYGtracZgt{}} \PYGtrac{l+m+mi}{21}\PYGtrac{o}{)}
+                \PYGtrac{c+c1}{// It\PYGtracZsq{}s a tie because both players lost}
+                \PYGtrac{n}{assertThat}\PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getRunnerup}\PYGtrac{o}{().}\PYGtrac{n+na}{getScore}\PYGtrac{o}{()).}\PYGtrac{n+na}{isGreaterThan}\PYGtrac{o}{(}\PYGtrac{l+m+mi}{21}\PYGtrac{o}{);}
+            \PYGtrac{k}{else} \PYGtrac{k}{if} \PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getRunnerup}\PYGtrac{o}{().}\PYGtrac{n+na}{getScore}\PYGtrac{o}{()} \PYGtrac{o}{\PYGtracZgt{}} \PYGtrac{l+m+mi}{21}\PYGtrac{o}{)}
+                \PYGtrac{c+c1}{// It\PYGtracZsq{}s a tie because both players lost}
+                \PYGtrac{n}{assertThat}\PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getWinner}\PYGtrac{o}{().}\PYGtrac{n+na}{getScore}\PYGtrac{o}{()).}\PYGtrac{n+na}{isGreaterThan}\PYGtrac{o}{(}\PYGtrac{l+m+mi}{21}\PYGtrac{o}{);}
+            \PYGtrac{k}{else}
+                \PYGtrac{c+c1}{// It\PYGtracZsq{}s a tie because both players have the same score}
+                \PYGtrac{n}{assertThat}\PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getWinner}\PYGtrac{o}{().}\PYGtrac{n+na}{getScore}\PYGtrac{o}{()).}\PYGtrac{n+na}{isEqualTo}\PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getRunnerup}\PYGtrac{o}{().}\PYGtrac{n+na}{getScore}\PYGtrac{o}{());}
+        \PYGtrac{o}{\PYGtracZcb{}} \PYGtrac{k}{else} \PYGtrac{o}{\PYGtracZob{}}
+            \PYGtrac{c+c1}{// A winning player can never have more than 21 points}
+            \PYGtrac{n}{assertThat}\PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getWinner}\PYGtrac{o}{().}\PYGtrac{n+na}{getScore}\PYGtrac{o}{()).}\PYGtrac{n+na}{isLessThanOrEqualTo}\PYGtrac{o}{(}\PYGtrac{l+m+mi}{21}\PYGtrac{o}{);}
+
+            \PYGtrac{c+c1}{// A winning player has more points than the runner\PYGtracZhy{}up when he wins by comparison}
+            \PYGtrac{k}{if} \PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getRunnerup}\PYGtrac{o}{().}\PYGtrac{n+na}{getScore}\PYGtrac{o}{()} \PYGtrac{o}{\PYGtracZlt{}=} \PYGtrac{l+m+mi}{21}\PYGtrac{o}{)}
+                \PYGtrac{n}{assertThat}\PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getWinner}\PYGtrac{o}{().}\PYGtrac{n+na}{getScore}\PYGtrac{o}{()).}\PYGtrac{n+na}{isGreaterThan}\PYGtrac{o}{(}\PYGtrac{n}{result}\PYGtrac{o}{.}\PYGtrac{n+na}{getRunnerup}\PYGtrac{o}{().}\PYGtrac{n+na}{getScore}\PYGtrac{o}{());}
+        \PYGtrac{o}{\PYGtracZcb{}}
+    \PYGtrac{o}{\PYGtracZcb{}}
+\PYGtrac{o}{\PYGtracZcb{}}
+\end{Verbatim}

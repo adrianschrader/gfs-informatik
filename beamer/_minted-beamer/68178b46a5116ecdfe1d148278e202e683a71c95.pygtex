@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGfriendly{n+nd}{@Test}
+\PYGfriendly{k+kd}{public} \PYGfriendly{k+kt}{void} \PYGfriendly{n+nf}{playRoundSortsPlayersByScore}\PYGfriendly{o}{()} \PYGfriendly{k+kd}{throws} \PYGfriendly{n}{Exception} \PYGfriendly{o}{\PYGfriendlyZob{}}
+    \PYGfriendly{n}{GameMaster} \PYGfriendly{n}{master} \PYGfriendly{o}{=} \PYGfriendly{n}{generateGameMaster}\PYGfriendly{o}{();}
+    \PYGfriendly{n}{PlayerScoreComparator} \PYGfriendly{n}{comparator} \PYGfriendly{o}{=} \PYGfriendly{k}{new} \PYGfriendly{n}{PlayerScoreComparator}\PYGfriendly{o}{(}\PYGfriendly{l+m+mi}{21}\PYGfriendly{o}{);}
+    \PYGfriendly{n}{master}\PYGfriendly{o}{.}\PYGfriendly{n+na}{playRound}\PYGfriendly{o}{(}\PYGfriendly{l+m+mi}{21}\PYGfriendly{o}{);}
+
+    \PYGfriendly{n}{assertThat}\PYGfriendly{o}{(}\PYGfriendly{n}{master}\PYGfriendly{o}{.}\PYGfriendly{n+na}{getPlayers}\PYGfriendly{o}{())}
+        \PYGfriendly{o}{.}\PYGfriendly{n+na}{isSortedAccordingTo}\PYGfriendly{o}{(}\PYGfriendly{n}{comparator}\PYGfriendly{o}{);}
+\PYGfriendly{o}{\PYGfriendlyZcb{}}
+\end{Verbatim}

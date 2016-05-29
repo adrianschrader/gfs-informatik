@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGfriendly{k+kn}{import} \PYGfriendly{n+nn}{org.junit.Test}\PYGfriendly{o}{;}
+\PYGfriendly{k+kn}{import} \PYGfriendly{n+nn}{org.junit.Assert.*}\PYGfriendly{o}{;}
+
+\PYGfriendly{k+kd}{public} \PYGfriendly{k+kd}{class} \PYGfriendly{n+nc}{MatchBoxTest} \PYGfriendly{o}{\PYGfriendlyZob{}}
+  \PYGfriendly{k+kd}{public} \PYGfriendly{n+nf}{MatchBoxTest}\PYGfriendly{o}{()} \PYGfriendly{o}{\PYGfriendlyZob{}\PYGfriendlyZcb{}}
+
+  \PYGfriendly{n+nd}{@Test}
+  \PYGfriendly{k+kd}{public} \PYGfriendly{k+kt}{void} \PYGfriendly{n+nf}{drawNotMoreThanThree}\PYGfriendly{o}{()} \PYGfriendly{o}{\PYGfriendlyZob{}}
+    \PYGfriendly{n}{MatchBox} \PYGfriendly{n}{matchbox1} \PYGfriendly{o}{=} \PYGfriendly{k}{new} \PYGfriendly{n}{MatchBox}\PYGfriendly{o}{(}\PYGfriendly{l+m+mi}{25}\PYGfriendly{o}{);}
+    \PYGfriendly{n}{matchbox1}\PYGfriendly{o}{.}\PYGfriendly{n+na}{draw}\PYGfriendly{o}{(}\PYGfriendly{l+m+mi}{4}\PYGfriendly{o}{);}
+    \PYGfriendly{n}{assertEquals}\PYGfriendly{o}{(}\PYGfriendly{l+m+mi}{22}\PYGfriendly{o}{,} \PYGfriendly{n}{matchbox1}\PYGfriendly{o}{.}\PYGfriendly{n+na}{count}\PYGfriendly{o}{());}
+  \PYGfriendly{o}{\PYGfriendlyZcb{}}
+\PYGfriendly{o}{\PYGfriendlyZcb{}}
+\end{Verbatim}

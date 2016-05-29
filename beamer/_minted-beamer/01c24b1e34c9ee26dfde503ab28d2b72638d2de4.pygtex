@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGfriendly{c+cm}{/**}
+\PYGfriendly{c+cm}{ * Starts one round in which every player gets one turn and}
+\PYGfriendly{c+cm}{ * determines the winner.}
+\PYGfriendly{c+cm}{ * @param goalScore score the players have to get close to}
+\PYGfriendly{c+cm}{ * @return outcome of the round (may be a tie)}
+\PYGfriendly{c+cm}{ */}
+ \PYGfriendly{k+kd}{public} \PYGfriendly{n}{Result} \PYGfriendly{n+nf}{playRound}\PYGfriendly{o}{(}\PYGfriendly{k+kt}{int} \PYGfriendly{n}{goalScore}\PYGfriendly{o}{)} \PYGfriendly{o}{\PYGfriendlyZob{}}
+   \PYGfriendly{c+c1}{// Every player gets one turn}
+   \PYGfriendly{k}{for} \PYGfriendly{o}{(}\PYGfriendly{n}{Player} \PYGfriendly{n}{player} \PYGfriendly{o}{:} \PYGfriendly{k}{this}\PYGfriendly{o}{.}\PYGfriendly{n+na}{players}\PYGfriendly{o}{)} \PYGfriendly{o}{\PYGfriendlyZob{}}
+       \PYGfriendly{n}{player}\PYGfriendly{o}{.}\PYGfriendly{n+na}{resetScore}\PYGfriendly{o}{();}
+       \PYGfriendly{n}{player}\PYGfriendly{o}{.}\PYGfriendly{n+na}{play}\PYGfriendly{o}{(}\PYGfriendly{k}{this}\PYGfriendly{o}{.}\PYGfriendly{n+na}{dice}\PYGfriendly{o}{,} \PYGfriendly{n}{goalScore}\PYGfriendly{o}{);}
+   \PYGfriendly{o}{\PYGfriendlyZcb{}}
+
+   \PYGfriendly{c+c1}{// Sorting the players by their score}
+   \PYGfriendly{k}{this}\PYGfriendly{o}{.}\PYGfriendly{n+na}{players}\PYGfriendly{o}{.}\PYGfriendly{n+na}{sort}\PYGfriendly{o}{(}\PYGfriendly{k}{new} \PYGfriendly{n}{PlayerScoreComparator}\PYGfriendly{o}{(}\PYGfriendly{n}{goalScore}\PYGfriendly{o}{));}
+
+   \PYGfriendly{c+c1}{// Determine the result and return it}
+   \PYGfriendly{k}{return} \PYGfriendly{k}{new} \PYGfriendly{n}{Result}\PYGfriendly{o}{(}\PYGfriendly{n}{goalScore}\PYGfriendly{o}{,} \PYGfriendly{k}{this}\PYGfriendly{o}{.}\PYGfriendly{n+na}{players}\PYGfriendly{o}{);}
+\PYGfriendly{o}{\PYGfriendlyZcb{}}
+\end{Verbatim}

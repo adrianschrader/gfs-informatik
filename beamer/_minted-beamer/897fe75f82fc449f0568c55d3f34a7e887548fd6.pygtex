@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGfriendly{n+nd}{@Test}
+\PYGfriendly{k+kd}{public} \PYGfriendly{k+kt}{void} \PYGfriendly{n+nf}{drawAtLeastOne}\PYGfriendly{o}{()} \PYGfriendly{o}{\PYGfriendlyZob{}}
+    \PYGfriendly{n}{MatchBox} \PYGfriendly{n}{matchbox1} \PYGfriendly{o}{=} \PYGfriendly{k}{new} \PYGfriendly{n}{MatchBox}\PYGfriendly{o}{(}\PYGfriendly{l+m+mi}{25}\PYGfriendly{o}{);}
+    \PYGfriendly{n}{matchbox1}\PYGfriendly{o}{.}\PYGfriendly{n+na}{draw}\PYGfriendly{o}{(}\PYGfriendly{l+m+mi}{0}\PYGfriendly{o}{);}
+    \PYGfriendly{n}{assertEquals}\PYGfriendly{o}{(}\PYGfriendly{n}{matchbox1}\PYGfriendly{o}{.}\PYGfriendly{n+na}{count}\PYGfriendly{o}{(),} \PYGfriendly{l+m+mi}{24}\PYGfriendly{o}{);}
+\PYGfriendly{o}{\PYGfriendlyZcb{}}
+\end{Verbatim}
