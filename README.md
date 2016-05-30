@@ -1,4 +1,4 @@
-# gfs-nmr
+# gfs-informatik
 
 Presentation and project documentation about the basics of test driven
 development and explains common errors.  
