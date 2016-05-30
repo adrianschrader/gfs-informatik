@@ -38,6 +38,9 @@
 *.xdy
 *.tdo
 
+out
+_minted-beamer
+
 
 ### Linux ###
 *~
